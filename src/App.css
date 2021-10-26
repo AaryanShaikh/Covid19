@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;500;700&display=swap');
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.overall {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 90vw;
+  font-family: 'Mali', cursive;
+}
+
+.overall .left h1 {
+  color: #e4443e;
+  background: #fdf2f2;
+  width: fit-content;
+  padding: 0 1 vh;
+  border-radius: 7 px;
+}
+
+:is(.overall .left p, .search :is(h2, p), .search .input svg, .states tr :is(th, td)) {
+  color: #838b92;
+  font-weight: 600;
+}
+
+.overall .right {
+  font-weight: 500;
+  color: #504bb5;
+}
+
+.overall .right p:nth-child(2) {
+  font-weight: 600;
+  font-size: larger;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search p svg {
+  font-size: 2.5vh;
+}
+
+.search .input {
+  height: 7vh;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 20px 6px #0000002e;
+  border-radius: 7px;
+}
+
+.search .input svg {
+  font-size: 4vh;
+}
+
+.search input[type=text] {
+  height: 91%;
+  outline: none;
+  font-size: 3vh;
+  width: 35vw;
+  border: none;
+}
+
+.tally {
+  display: flex;
+  width: 73vw;
+  justify-content: center;
+}
+
+.tally .data {
+  width: 20vw;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.tally .data:nth-child(1) {
+  color: #ff1c4b;
+}
+
+.tally .data:nth-child(1):hover {
+  background: #ffe9e9;
+}
+
+.tally .data:nth-child(2):hover {
+  background: #cfffd9;
+}
+
+.tally .data:nth-child(3):hover {
+  background: #f3f3f3;
+}
+
+.tally .data:nth-child(2) {
+  color: #28e951;
+}
+
+.tally .data:nth-child(3) {
+  color: #6f787f;
+}
+
+.states table {
+  text-align: center;
+  border-collapse: separate;
+  width: 100%;
+  border-spacing: 1vh;
+}
+
+.states table tr:nth-child(odd) {
+  background: #80808029;
+}
+
+.states table tr:nth-child(even) {
+  background: #dfdfdf3d;
+}
+
+.states table tr :is(td, th) {
+  height: 8vh;
+  border-radius: 10px;
+}
+
+.load {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #39b49a;
+}
